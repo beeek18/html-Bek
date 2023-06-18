@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap");
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --bg: #f1f1f1;
+  --accent: #4520aa;
+}
+
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+
+  box-sizing: border-box;
+
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1230px;
+
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.fullNavbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 50px 140px;
+}
+
+.logo a {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--black);
+
+  text-transform: uppercase;
+}
+
+.logo a:hover {
+  color: var(--accent);
+}
+
+.nav {
+  display: flex;
+  column-gap: 50px;
+
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav a {
+  color: var(--black);
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 3px;
+
+  color: var(--accent);
+}
+
+.bigName h1 {
+  text-align: center;
+
+  padding-top: 150px;
+
+  font-size: 50px;
+  font-weight: 800;
+
+  color: var(--accent);
+}
+
+.biggestName {
+  margin-bottom: 2px;
+  padding-bottom: 200px;
+
+  font-weight: 200;
+  font-size: 84px;
+
+  text-align: center;
+}
+
+.biggestName b {
+  font-weight: 300;
+  color: var(--accent);
+}
+
+/* About */
+
+.sectionAbout {
+  background-color: var(--bg);
+}
+
+.sectionAbout .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo img {
+  margin-top: 20px;
+  width: 300px;
+}
+
+.container-about h2 {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.textUnderAbout {
+  font-style: normal;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  color: var(--accent);
+}
+
+.textAboutMain {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 300;
+
+  padding-bottom: 50px;
+}
+
+.textAboutMain b {
+  font-weight: 400;
+  color: var(--accent);
+}
+
+.about-btn a {
+  width: 150px;
+  height: 40px;
+
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border-radius: 3px;
+
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--black);
+
+  -webkit-box-shadow: -3px 12px 53px -10px rgba(69, 32, 170, 0.49);
+  -moz-box-shadow: -3px 12px 53px -10px rgba(69, 32, 170, 0.49);
+  box-shadow: -3px 12px 53px -10px rgba(69, 32, 170, 0.49);
+}
+
+.about-btn a:hover {
+  background-color: var(--accent);
+}
+
+.about-btn a i {
+  font-style: normal;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Servises */
+
+.sectionServices {
+  padding-top: 100px;
+  display: flex;
+  text-align: center;
+}
+
+#linkServices {
+  padding-bottom: 50px;
+  font-size: 34px;
+}
+
+.container-service {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 350px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 20px;
+
+  border-radius: 10px;
+
+  -webkit-box-shadow: -3px 12px 53px -10px rgba(69, 32, 170, 0.49);
+  -moz-box-shadow: -3px 12px 53px -10px rgba(69, 32, 170, 0.49);
+  box-shadow: -3px 12px 53px -10px rgba(69, 32, 170, 0.49);
+}
+
+.service-icon i {
+  margin: 10px 0;
+
+  color: var(--accent);
+
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+}
+
+.text1 {
+  font-size: 24px;
+  font-weight: 500;
+
+  padding-bottom: 10px;
+}
+
+.text2 {
+  width: 300px;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 100px;
+  padding: 20px 0 10px 0;
+  text-align: center;
+  background-color: var(--bg);
+}
+
+footer p {
+  padding-top: 10px;
+  color: var(--accent);
+}
+
+.contacts a {
+  padding: 10px;
+  color: var(--black);
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+footer p a {
+  color: var(--black);
+}
+footer p a:hover {
+  color: var(--accent);
+}
